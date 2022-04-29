@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht-device-widht">
+
+        <title> Challenge Oracle ONE - MYD</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="style.css">
+     
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header class="encabezado">
+            <div class="caja">
+                <h1 class="tituloheader">------Codificador y Decodificador------</h1>
+            </div>  
+        </header>
+     
+            
+            <section class="seccionencriptar">
+                <textarea class="ingresartexto" name="texto" id="textarea" cols="30" rows="10" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                
+                <div class="advertenciamssg">
+                    <img src="imagenes/mssgadvertencia.png" alt="imagen de signo de exclamación" class="imgadvertencia">
+                    <p class="p_mssg">Solo puede decodificar letras minúsculas y sin acentos</p>
+                </div>
+               
+                <div class="divboton">
+                    <button class="boton botonEncriptar" id="fencriptar">Encriptar</button>
+                    <button class="boton botonDesencriptar" id="fdesencriptar">Desencriptar</button>
+                    <input type="button" class="boton botonLimpiar" value="Limpiar" onclick="location.reload()">
+               
+                </div>
+
+            </section>
+     
+    
+            <section class="secciondesencriptar">
+                <textarea style="display:none;" class="secciondesencriptartxt" name="texto" id="txtresult" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div id="contenido_desencriptar">
+                    <img src="imagenes/busqueda.png" alt="Imagen de un niño buscando" class="imgbusqueda">
+                    <h2 class="dtitulo">Ningún mensaje fue encontrado</h2>
+                    <p class="dparrafo">Ingresa el texto que desees encriptar o desencriptar. Gracias!</p>
+                </div>
+                <div class="cont_copiar">
+                    <button class="boton botoncopiar" id="copiartxt" hidden>Copiar</button>
+                </div>
+            </section>
+            
+        <footer class="final">
+            
+                <img class= "imagen_footer" src="imagenes/ok.png ">
+                <p class="copyright">&copy Copyright MyG - 2022</p>
+            
+        </footer>
+    </body>
+
+    
+    
+    <script  src="js/principaljs.js"></script>
+
+</html>
+
